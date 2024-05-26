@@ -5,10 +5,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
 html, body {
   height: 100%;
   width: 100%;
+
 }
 
 .large-text{
@@ -18,9 +18,13 @@ html, body {
 h2{
   color: #ff5722;
 }
+.container{
+  display: flex;
+ 
+}
 
 .sidebar {
-  position: fixed;
+  position: fixed; 
   top: 0;
   left: 0;
   width: 250px; 
@@ -32,7 +36,6 @@ h2{
   align-items: center;
   padding-top: 20px; 
 }
-
 
 .styled-hr {
   border: none;
@@ -47,7 +50,6 @@ h2{
   margin-bottom: 30px; 
   font-size: 24px; 
 }
-
 
 nav ul {
   list-style: none; 
@@ -99,8 +101,8 @@ nav ul li a {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
-  gap: 10px; /* Adjust the gap between grid items if needed */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
   margin: 0 auto;
   max-width: 1000px;
   padding-top: 30px;
@@ -162,63 +164,64 @@ nav ul li a {
   justify-content:space-between;
   gap: 20px;
   width:100%;
-}
-.packages-section p {
-  color: #666;
-  font-size: 14px;
-  max-width: 600px;
-  margin: 0 auto 30px;
+  
 }
 
 
+.pack-details{
+    margin-bottom: 30px;
+}
+.table {
+ display: flex;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  gap: 10px;
+  width:100%;
+  
+}
 
-.package {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  overflow: hidden;
-  text-align: center;
+table.package {
   width: 100%;
+  border-collapse: collapse;
+  background: #eeebeb;
+  margin: 0px;
 }
 
-.package h3 {
-  background: #444;
-  color: #fff;
-  margin: 0;
+table.package th {
   padding: 20px;
-  font-size: 24px;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
 }
 
-.package.pro h3 {
-  background: #ff5a3c;
-}
-package pro{
-  padding-right: 0;
-  margin-right: 0;
-}
-.package ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+table.package.basic th {
+  background-color: #4a4a4a;
 }
 
-.package ul li {
-  border-bottom: 1px solid #eee;
+table.package.pro th {
+  background-color: #ff5a3c;
+}
+
+table.package td {
+  border: 1px solid #ddd;
   padding: 15px;
-  font-size: 16px;
+  text-align: center;
+  font-size: 1em;
+  background-color: #fafafa;
 }
 
 .price-controls {
-  background: #fff;
-  padding: 15px;
-  border-top: 1px solid #eee;
   display: flex;
-  flex: 1;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .price-controls button {
+  border-bottom: 1px solid #eee;
   background: transparent;
   border: none;
   font-size: 24px;
@@ -226,25 +229,35 @@ package pro{
   color: #000;
 }
 
-.price {
-  font-size: 24px;
-  font-weight: bold;
+.price-controls .price {
+  font-size: 1.5em;
+  margin: 0 20px;
 }
 
 .rooms {
-  padding: 10px 0;
-  font-size: 14px;
-  color: #666;
+  margin-top: 10px;
+  font-size: 1.1em;
 }
 
 .signup-button {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  background-color: #ff5a3c;
+  color: white;
+  border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1em;
   cursor: pointer;
-  margin: 20px 0;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #e04e32;
+}
+
+.thanksShowing {
+  display: none;
+  font-size: 1.1em;
+  color: #4a4a4a;
+  margin-top: 10px;
 }
 
 .signup-button {
@@ -278,7 +291,7 @@ package pro{
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  
 }
 
 .contact button {
@@ -288,8 +301,14 @@ package pro{
   border: none;
 }
 
-/* .contact button:hover {
+.contact button:hover {
   background-color: #e64a19;
-} */
+}
 
 
+.footer {
+  margin-top: 25px;
+  width: 100%;
+  height: 50px; 
+  background-color: #f0f0f0; 
+}
