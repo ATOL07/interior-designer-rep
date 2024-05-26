@@ -1,3 +1,5 @@
+/* universal selector */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@ h2{
   display: flex;
  
 }
-
+/* this for the side bars or navbar which has been fixed */
 .sidebar {
   position: fixed; 
   top: 0;
@@ -37,6 +39,7 @@ h2{
   padding-top: 20px; 
 }
 
+/* this is for horizontal line */
 .styled-hr {
   border: none;
   height: 5px; 
@@ -46,6 +49,7 @@ h2{
   margin-top: 10px; 
 }
 
+/* this is for deigning the sidebars or navbar */
 .company {
   margin-bottom: 30px; 
   font-size: 24px; 
@@ -70,6 +74,8 @@ nav ul li a {
   box-sizing: border-box; 
 }
 
+
+/* style for the home introduction */
 .content {
   margin-left: 250px;
   padding: 20px;
@@ -95,9 +101,13 @@ nav ul li a {
   margin-top:  50px;
 }
 
+/* service style part */
+
 .services-section{
   margin-bottom: 25px;
 }
+
+/* style for gallery */
 
 .gallery {
   display: grid;
@@ -108,10 +118,31 @@ nav ul li a {
   padding-top: 30px;
 }
 
+/* gallery images */
+
 .gallery-img {
   width: 100%; 
   height: auto; 
   object-fit: cover; 
+}
+
+
+
+/*  designers containing  information */
+
+.designer-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.designer-info {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #eeebeb;
+
 }
 
 .designers-card {
@@ -131,28 +162,12 @@ nav ul li a {
   gap: 20px;
   padding-top: 30px;
 }
-
-
-
-.designer-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  display: block;
-}
-
-.designer-info {
-  line-height: 1.5;
-  font-size: 0.9em;
-  padding: 15px;
-  background: #eeebeb;
-
-}
-
+/* color for the grade of designers */
 .grade{
   color: #666;
 }
 
+/* packages section css style */
 #packages{
   margin-top:45px;
   margin-bottom: 45px;
@@ -239,6 +254,8 @@ table.package td {
   font-size: 1.1em;
 }
 
+/* design for signup button */
+
 .signup-button {
   background-color: #ff5a3c;
   color: white;
@@ -260,6 +277,7 @@ table.package td {
   margin-top: 10px;
 }
 
+/* when sign up button is clicked the after clicking the color of the button will change */
 .signup-button {
   background: #ff5a3c;
   color: #fff;
@@ -273,6 +291,7 @@ table.package td {
   color: #121111;
 }
 
+/* after clicking sign up button thanks message will show */
 .thanksShowing {
   background: #f2f2f2;
   padding: 10px;
@@ -281,6 +300,7 @@ table.package td {
   display: none;
 }
 
+/* style for contact */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -305,7 +325,7 @@ table.package td {
   background-color: #e64a19;
 }
 
-
+/* footer part */
 .footer {
   margin-top: 25px;
   width: 100%;
