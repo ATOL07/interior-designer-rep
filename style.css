@@ -33,7 +33,6 @@ h2{
   height: 100%;
   background-color: #ff5722; 
   color: white; /* Text color */
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px; 
@@ -52,6 +51,7 @@ h2{
 /* this is for deigning the sidebars or navbar */
 .company {
   margin-bottom: 30px; 
+  padding-left: 20px;
   font-size: 24px; 
 }
 
