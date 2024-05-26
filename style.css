@@ -147,6 +147,10 @@ nav ul li a {
 
 }
 
+.grade{
+  color: #666;
+}
+
 #packages{
   margin-top:45px;
   margin-bottom: 45px;
@@ -284,8 +288,8 @@ package pro{
   border: none;
 }
 
-.contact button:hover {
+/* .contact button:hover {
   background-color: #e64a19;
-}
+} */
 
 

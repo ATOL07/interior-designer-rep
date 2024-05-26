@@ -13,19 +13,20 @@
     <div class="sidebar">
         <h1 class="company">The Company</h1>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Designers</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#service-section">Services</a></li>
+            <li><a href="#designers-main-section">Designers</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
         </nav>
     </div>
-    <main class="content">
+    <div class="content">
         <section class="intro">
-            <h1 class="large-text">Interior Design</h1>
-            <h3>Showcase.</h3>
+            <h1 id="home" class="large-text">Interior Design</h1>
+            <h3 id="showcase">Showcase.</h3>
             <hr class="styled-hr"> <br>
             <div class="gallery">
                 <img class="gallery-img" src="./images/showcase-01.jpg" alt="Interior Design 1">
@@ -36,7 +37,7 @@
                 <img class="gallery-img" src="./images/showcase-06.jpg" alt="Interior Design 1">
             </div>
         </section>
-        <section class="services-section">
+        <section id="service-section" class="services-section">
             <div>
               <h2>Services.</h2>
               <hr class="styled-hr"><br>
@@ -46,7 +47,7 @@
               Some text about our services what we do and what we services-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi amet laboriosam ea dicta est recusandae. At harum repellendus, numquam nisi incidunt non repellat enim unde nostrum cupiditate ea corrupti ut nam reiciendis molestias magnam animi quia! Delectus repudiandae, ratione doloremque illo dicta nulla maxime reprehenderit suscipit provident omnis, saepe a minus earum modi qui nesciunt quam? Modi officia, iusto quibusdam mollitia omnis debitis praesentium, non consequatur voluptates doloremque quam tenetur, rem minima explicabo aliquam adipisci autem aliquid maiores fugiat! Eius debitis, nihil aut autem, explicabo unde provident cumque assumenda, voluptate praesentium sint commodi suscipit. Dolorem quos non minus quis dolores.</p>
             </div>
         </section>
-        <section class="designers-main-section">
+        <section id="designers-main-section">
             <h2>Designers.</h2><br>
             <hr class="styled-hr"> <br>
             <p>The best team in the world.</p><br>
@@ -57,24 +58,24 @@
               <div class="designer">
                <img class="designer-image" src="./images/person-01.jpg" alt="">
                <div class="designer-info">
-                 <h4>Jane Doe</h4>
-                 <h5>Designer</h5>
+                 <h3>John Doe</h3><br>
+                 <h4 class="grade">CEO & Founder</h4><br>
                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nostrum placeat!</p>
                </div> 
              </div> 
               <div class="designer">
                <img class="designer-image" src="./images/person-02.jpg" alt="">
                <div class="designer-info">
-                 <h4>Jane Doe</h4>
-                 <h5>Designer</h5>
+                 <h3>Jane Doe</h3><br>
+                 <h4 class="grade">Designer</h4><br>
                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nostrum placeat!</p>
                </div> 
              </div> 
               <div class="designer">
                <img class="designer-image" src="./images/person-03.jpg" alt="">
                <div class="designer-info">
-                 <h4>Jane Doe</h4>
-                 <h5>Designer</h5>
+                 <h3>Mike Ross</h3><br>
+                 <h4 class="grade">Architect</h4><br>
                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, nostrum placeat!</p>
                </div> 
              </div> 
@@ -128,7 +129,7 @@
       </div>
        </section> 
        
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact.</h2>
             <hr class="styled-hr"> <br>
             <form action="">
@@ -141,7 +142,7 @@
               <button type="submit" value="submit" >Send Message</button>
             </form>
         </section>
-    </main>
+    </div>
 </div>
 
 
